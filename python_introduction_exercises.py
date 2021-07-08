@@ -1,3 +1,2 @@
-def greeting(s):
-    s = "Hello World"
-    print(s)
+s  = 'Hello World'
+print(s)
