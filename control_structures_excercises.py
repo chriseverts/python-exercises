@@ -1,32 +1,51 @@
 ## 1. Conditional Basics
 
+
+
+
+
+
+
+
 ####prompt the user for a day of the week, print out whether the day is Monday or not
+day_of_week = input("Please enter the day of the week")
+
+if day_of_week.startswith("Mon"):
+    print("That day is monday!")
+else:
+    print("That day is not monday!")
 
 ##prompt the user for a day of the week, print out whether the day is a weekday or a weekend
+
+day_of_week = input("Please enter the day of the week")
+
+if day_of_week.lower().startswith("s"):
+    print("{day_of_week}is a weekend day!")
+else:
+    print("{day_of_week} is not a weekend day!")
+
+
+
 
 ##create variables and make up values for the number of hours worked in one week
 ##the hourly rate
 ##how much the week's paycheck will be
 ##write the python code that calculates the weekly paycheck. You get paid time and a half if you work more than 40 hours
 
+hourly_rate = 25
+hours_per_week = 60
 
-day_of_week = 'Monday'
+if hours_per_week > 40:
+    overtime_h = hourly_rate - 40
+    overtime_p = overtime_h + hourly_rate * .5
+else 
+    overtime_p = 0
 
-If day_of_week == 'Monday':
-    print('Yes')
-elif(day_of_week == 'Tuesday':
-    print('No')
-elif(day_of_week == 'Wensday':
-    print('No')
-elif(day_of_week == 'Thursday':
-    print('No')
-elif(day_of_week == 'Friday':
-    print('No')
-elif(day_of_week == 'Saturday':
-    print('No')
-elif(day_of_week == 'Sunday':
-    print('No')
-else:
+
+paycheck = hourly_rate * hours_per_week + overtime_p
+
+paycheck
+
 
 
 
@@ -46,20 +65,32 @@ while i <= 15:
     print(i)
     i += 1
 
+
+##Create a while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
+
 i = 0
 while i <= 100:
     print(i)
     i += 2
+
+
+##Alter your loop to count backwards by 5's from 100 to -10.
 
 i = 100
 while i >= -10:
     print(i)
     i -= 5
 
+## Create a while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
+
+
 i = 2
 while i <= 1_000_000:
     print(i)
     i = i ** 2
+
+
+##Write some code that prompts the user for a number, then shows a multiplication table up through 10 for that number.
 
 x = (input("Please enter a number:"))
 
