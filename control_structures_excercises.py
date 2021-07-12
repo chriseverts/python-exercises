@@ -118,13 +118,27 @@ for num in range(50):
         break
 num = input(" enter an odd number between 1 and 50")
 
+numbers = input(" enter an odd number between 1 and 50")
+
 for num in range(50):
-    if num == True:
-        print(f'yikes skipping {num}')
+    if num == False:
+        print(f'Number to skip {numbers}')
     if num % 2 == 0:
         continue
     print(f'Here is an odd number: {num}')
-
+    if num == numbers:
+        print(f' Yikes skipping this number {numbers}')
+        
     
-
+##3. Fizzbuzz One of the most common interview questions for entry-level programmers is the FizzBuzz test. 
+# Developed by Imran Ghory, the test is designed to test basic looping and conditional logic skills.
     
+for x in range(1, 101):
+    if x % 5 == 0 and x % 3 == 0:
+        print('FizzBuzz')
+    elif x % 3 == 0:
+        print('Fizz')
+    elif x % 5 == 0:
+        print('Buzz')
+    else:
+        print(x)
