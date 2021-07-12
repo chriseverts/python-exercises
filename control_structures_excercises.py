@@ -110,8 +110,25 @@ for i in range(10):
 # Use a loop and the continue statement to output all the odd numbers between 1 and 50, except for the number the user entered.
 
 
-odd_number = input(" enter an odd number between 1 and 50")
+n = input(" enter an odd number between 1 and 50")
 
 
+for num in range(50):
+    if num % 2 == 0:
+        break
+    print("Number must be odd")
+    
+n = input(" enter an odd number between 1 and 50")
+
+while num in range(50):
+    if num % 2 == 0:
+        continue
+    print(f'Here is an odd number: {num}')
+    print(f'yikes skipping {num}')
+    
+
+
+
+    
 
     
