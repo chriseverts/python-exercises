@@ -30,8 +30,12 @@ def is_consonant(string):
 ##4. Define a function that accepts a string that is a word. The function should capitalize the first letter of the word if the word starts with a consonant.
 
 user = input("Please enter a sentance")
+def capword(user):
+    if user[0] not in 'aeious':
+        user = user.capitalize()
+    return(user)
 
-print(user.title())
+    
 
 
 
@@ -96,7 +100,12 @@ remove_vowels(string)
 ##10 Define a function named normalize_name. 
 # It should accept a string and return a valid python identifier, that is:
 
-
+def remove_symbols(name):
+    cleaned = ""
+    for char in name:
+                if (char.isalnum() == True) or (char ==" "):
+                    cleaned += char
+    return cleaned
 
 
 ##11.Write a function named cumulative_sum that accepts a list of numbers and returns a list that is the cumulative sum of the numbers in the list.
