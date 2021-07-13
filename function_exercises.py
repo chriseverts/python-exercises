@@ -50,11 +50,13 @@ def capword(user):
 
 
 ##5. Define a function named calculate_tip. It should accept a tip percentage (a number between 0 and 1) and the bill total, and return the amount to tip.
-def calculate_tip(total_cost,tip):
-        total_cost = 20
-        tip = 1  
-        new_total = (total_cost * tip) / 100 + total_cost
-        return new_total
+def calculate_tip(bill, tip_percent):
+    
+    return bill * tip_percent
+bill = 40
+tip_percent = .30
+
+calculate_tip(bill, tip_percent)
 
         
 ##6. Define a function named apply_discount. 
