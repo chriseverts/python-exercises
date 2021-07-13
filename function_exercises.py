@@ -81,17 +81,25 @@ def handle_commas(b):
 ##8. Define a function named get_letter_grade. 
 # It should accept a number and return the letter grade associated with that number (A-F).
 
-def get_letter_grade(grade):
-    if grade >=90:
-        return "A"
-    elif (grade <=89) and (grade >=80):
-        return "B"
-    elif (grade <=79) and (grade>=70):
-        return "C"
-    elif (grade >=60) and (grade <=69):
-        return "D"
+def get_letter_grade(number):
+    
+    if number <= 69:
+    
+        grade = "F"
+    
+    elif number <= 79:
+
+        grade = "C"
+
+    elif number <= 89:
+
+        grade = "B"
+
     else:
-        return “F”
+
+        grade = "A"
+
+    return grade
         
 ##9. Define a function named remove_vowels that accepts a string 
 # and returns a string with all the vowels removed.
