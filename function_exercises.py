@@ -11,7 +11,17 @@ def is_two (x):
 
 ##2. Define a function named is_vowel. It should return True if the passed string is a vowel, False otherwise.
 
+
 def is_vowel(string):
+    
+    return string.lower() in "aeiou"
+string = "U"
+
+is_vowel(string)
+
+
+
+def is_vow(string):
     for char in string:
         if char.lower() in 'aeiou':
             return True
