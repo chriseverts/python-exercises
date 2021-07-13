@@ -103,9 +103,11 @@ remove_vowels(string)
 ##cumulative_sum([1, 1, 1]) returns [1, 2, 3]
 ##cumulative_sum([1, 2, 3, 4]) returns [1, 3, 6, 10]
 
+
+# cumulative_sum is a single parameter, lists is a string, will return a cumulative list
 def cumulative_sum(lists):
     cu_list = []
-    length = len(lists)
-    cu_list = sum(lists[0:x:1]) 
-    for x in range(0, length+1):
-            return cu_list[1:]
+    length = len(lists)   # length is the length of the lists which is a paramter
+    cu_list = sum(lists[0:x:1]) # sums the list of integers in the parameter
+    for x in range(0, length+1): 
+            return cu_list[1:] # returns the new list
